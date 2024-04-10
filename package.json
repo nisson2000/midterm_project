@@ -33,5 +33,6 @@
     },
     "devDependencies": {
         "nodemon": "^3.0.3"
-    }
+    },
+    "homepage": "https://nisson2000.github.io/midterm_project/"
 }
