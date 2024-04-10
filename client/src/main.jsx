@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, useNavigate } from "react-router-dom";
+import { HashRouter as Router, useNavigate } from "react-router-dom";
 import App from "./App.jsx";
 import { AuthProvider } from "./context/AuthContext";
 import "./index.css";
@@ -21,11 +21,11 @@ function HandleRedirect() {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <Router>
             <HandleRedirect />
             <AuthProvider>
                 <App />
             </AuthProvider>
-        </BrowserRouter>
+        </Router>
     </React.StrictMode>
 );
