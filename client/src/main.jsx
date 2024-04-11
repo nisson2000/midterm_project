@@ -22,7 +22,6 @@ function HandleRedirect() {
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <Router>
-            <HandleRedirect />
             <AuthProvider>
                 <App />
             </AuthProvider>
